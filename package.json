@@ -28,7 +28,8 @@
     "build": "pnpm run '/^build:.*/'",
     "build:mjs": "tsc --project tsconfig.mjs.json",
     "build:cjs": "tsc --project tsconfig.cjs.json",
-    "release": "changeset publish"
+    "release": "pnpm run publish",
+    "publish": "changeset publish"
   },
   "keywords": [
     "vitest",
