@@ -1,0 +1,37 @@
+{
+  "name": "to-mocked",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/cjs/index.js",
+  "module": "lib/mjs/index.js",
+  "types": "lib/cjs/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "export": {
+    ".": {
+      "require": {
+        "default": "./lib/cjs/index.js",
+        "types": "./lib/cjs/index.d.ts"
+      },
+      "import": {
+        "default": "./lib/mjs/index.js",
+        "types": "./lib/mjs/index.d.ts"
+      }
+    }
+  },
+  "scripts": {
+    "test": "vitest",
+    "build": "pnpm run '/^build:.*/'",
+    "build:mjs": "tsc --project tsconfig.mjs.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json"
+  },
+  "keywords": [],
+  "author": "Aaron Reisman <aaron@lifeiscontent.net> (https://lifeiscontent.net)",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.1"
+  }
+}
