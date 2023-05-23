@@ -1,5 +1,5 @@
 ---
-"to-mocked": major
+"@lifeiscontent/to-mocked": major
 ---
 
 Initial Release
