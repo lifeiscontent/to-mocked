@@ -1,13 +1,16 @@
 {
-  "name": "to-mocked",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@lifeiscontent/to-mocked",
+  "version": "0.0.0",
+  "description": "A TypeScript utility for simplifying mocked data creation. It creates proxy objects of any non-primitive type, throwing an error when an undefined property is accessed. Ideal for streamlining testing workflows and ensuring test data is accurately representative.",
   "main": "lib/cjs/index.js",
   "module": "lib/mjs/index.js",
   "types": "lib/cjs/index.d.ts",
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "export": {
     ".": {
       "require": {
@@ -24,14 +27,21 @@
     "test": "vitest",
     "build": "pnpm run '/^build:.*/'",
     "build:mjs": "tsc --project tsconfig.mjs.json",
-    "build:cjs": "tsc --project tsconfig.cjs.json"
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "release": "changeset publish"
   },
-  "keywords": [],
+  "keywords": [
+    "vitest",
+    "mocking",
+    "testing",
+    "typescript"
+  ],
   "author": "Aaron Reisman <aaron@lifeiscontent.net> (https://lifeiscontent.net)",
   "license": "MIT",
   "devDependencies": {
-    "@changesets/cli": "^2.26.1",
-    "typescript": "^5.0.4",
-    "vitest": "^0.31.1"
-  }
+    "@changesets/cli": "2.26.1",
+    "typescript": "5.0.4",
+    "vitest": "0.31.1"
+  },
+  "packageManager": "pnpm@8.5.1"
 }

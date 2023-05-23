@@ -2,13 +2,13 @@ lockfileVersion: '6.0'
 
 devDependencies:
   '@changesets/cli':
-    specifier: ^2.26.1
+    specifier: 2.26.1
     version: 2.26.1
   typescript:
-    specifier: ^5.0.4
+    specifier: 5.0.4
     version: 5.0.4
   vitest:
-    specifier: ^0.31.1
+    specifier: 0.31.1
     version: 0.31.1
 
 packages:
