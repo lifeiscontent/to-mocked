@@ -1,6 +1,6 @@
 {
   "name": "@lifeiscontent/to-mocked",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A TypeScript utility for simplifying mocked data creation. It creates proxy objects of any non-primitive type, throwing an error when an undefined property is accessed. Ideal for streamlining testing workflows and ensuring test data is accurately representative.",
   "main": "lib/cjs/index.js",
   "module": "lib/mjs/index.js",
